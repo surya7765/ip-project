@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9p9s!20*i5_eqmji%@t6=-s-s@7n$bwox*-goo0hy8=tc*-9-y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['velipproject.herokuapp.com']
 
 
 # Application definition
