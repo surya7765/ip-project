@@ -29,8 +29,8 @@
 			</div>
 			<div class="row">
 				<h4 class="center">Upcoming Events</h4>
-				 {% for events in event %}
-				 	{% if events.id <= 3 %}
+				 {% for events in range(len(event)) %}
+				 	{% if events <= 3 %}
 						<div class="col s12 m6 l4">
 							<div class="card-new">
 								<div class="front face">
