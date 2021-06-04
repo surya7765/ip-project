@@ -30,21 +30,19 @@
 			<div class="row">
 				<h4 class="center">Upcoming Events</h4>
 				 {% for events in event %}
-				 	{% if events <= 3 %}
-						<div class="col s12 m6 l4">
-							<div class="card-new">
-								<div class="front face">
-									<img class="image" src="{{events.img_url}}" alt="">
-									<h5 style="padding:20px;">{{events.event_name}}</h5>
-								</div>
-								<div class="back face">
-									<p style="text-align: justify;">
-										{{events.event_desc}}
-									</p>
-								</div>
+					<div class="col s12 m6 l4">
+						<div class="card-new">
+							<div class="front face">
+								<img class="image" src="{{events.img_url}}" alt="">
+								<h5 style="padding:20px;">{{events.event_name}}</h5>
+							</div>
+							<div class="back face">
+								<p style="text-align: justify;">
+									{{events.event_desc}}
+								</p>
 							</div>
 						</div>
-					{% endif %}
+					</div>
 				{% endfor %}
 			</div>
 		</div>
